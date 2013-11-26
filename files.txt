@@ -1,0 +1,12 @@
+manifests/resource/upstream.pp
+manifests/params.pp
+templates/vhost/vhost_location_proxy.erb
+templates/conf.d/upstream.erb
+templates/conf.d/proxy.conf.erb
+templates/conf.d/nginx.conf.erb
+manifests/resource/location.pp
+manifests/config.pp
+templates/vhost/vhost_header.erb
+manifests/resource/vhost.pp
+templates/vhost/vhost_ssl_header.erb
+

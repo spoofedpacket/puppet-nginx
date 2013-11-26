@@ -1,8 +1,16 @@
-# define: nginx::resource::upstream
+# = Define: nginx::resource::upstream
 #
-# This definition creates a new upstream proxy entry for NGINX
+#   This definition creates a new upstream proxy entry for NGINX
+#   Upstream proxy entries are then collected via exported resources
+#   declared on the upstream web servers themselves. See 
+#   nginx::resource::upstream-member.
 #
-# Parameters:
+# == Prerequisites:
+#
+#    ripienaar/puppet-concat. Storeconfigs on the puppetmaster
+#    and PuppetDB to collect/export resources.
+#
+# == Parameters:
 #   [*members*]               - Array of member URIs for NGINX to connect to. Must follow valid NGINX syntax.
 #   [*ensure*]                - Enables or disables the specified location (present|absent)
 #   [*upstream_cfg_prepend*] - It expects a hash with custom directives to put before anything else inside upstream
