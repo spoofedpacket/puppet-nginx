@@ -29,7 +29,7 @@
 # == Authors
 #
 #    Based on the puppetlabs/nginx module, modified to support
-#    exported resources by robertg@heanet.ie - 20130801
+#    exported resources by rob@spoofedpacket.net - 20130801
 #
 define nginx::resource::upstream-member (
   $upstream_group,
